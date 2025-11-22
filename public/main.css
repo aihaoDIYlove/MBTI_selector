@@ -25,11 +25,30 @@
     margin: 0 auto;
 }
 
+@media (min-width: 540px) {
+    #main-card {
+        width: 70%;
+    }
+}
+
 @media (min-width: 768px) {
+    #main-card {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main-card {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1280px) {
     #main-card {
         width: 30%;
     }
 }
+
 #img-container {
     position: relative;
     width: 100%;
