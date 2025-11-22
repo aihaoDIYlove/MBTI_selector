@@ -1,0 +1,99 @@
+/* 标题 */
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center; /* 居中对齐 */
+}
+/* 主容器卡片 */
+#main-card {
+    width: 86%;
+    height: auto;
+    min-height: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto; /* 居中对齐 */
+}
+/* 图片容器 */
+#img-container {
+    position: relative; /* 为矩阵容器提供定位上下文 */
+    width: 100%; /* 宽度自动和main-card保持一致 */
+    height: 100%;
+    margin: 0 auto; /* 居中对齐 */
+}
+/* 图片 */
+#img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持图片比例，填充容器 */;
+    z-index: 2; /* 确保图片位于矩阵容器上层 */
+}
+
+/* 矩阵容器 */
+#matrix-container {
+    position: absolute; /* 相对于img-container绝对定位 */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   /* 4 列等宽 */
+    grid-template-rows: repeat(4, 1fr);      /* 4 行等高 */
+    gap: 3px;                                /* 元素间距 */
+    top: 6%;
+    left: 1.6%;
+    width: 72.5%; /* 宽度自动和main-card保持一致 */
+    height: 91%;
+    background-color: rgba(255, 255, 0, 0.5);
+    z-index: 1; /* 矩阵容器位于图片下层，但保持在main-card上层 */
+}
+
+/* 矩阵元素 */
+.matrix-element {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(135, 12, 12, 0.25);
+}
+
+#list-container {
+    position: absolute; /* 相对于img-container绝对定位 */
+    top: 6%;
+    left: 76%;
+    width: 24%;
+    height: 51%;
+    background-color: rgba(255, 255, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 列表元素 */
+.list-element {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#list-0 {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#list-1 {
+    background-color: rgba(255, 145, 0, 0.2);
+}
+
+#list-2 {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+#list-3 {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+#list-4 {
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+#list-5 {
+    background-color: rgba(149, 0, 255, 0.2);
+}
