@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
     <title>MBTI喜好生成器</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <link rel="stylesheet" href="main.css">
 <body>
-    <h1 class="text" id="title">mbti喜好生成器</h1>
+    <h1 id="title">mbti喜好生成器</h1>
 
-    <div class="card" id="main-card">
-        <div class="image-container" id="img-container">
+    <div id="main-card">
+        <div id="img-container">
             <div class="matrix" id="matrix-container">
                 <div class="matrix-element" id="matrix-0-0"></div>
                 <div class="matrix-element" id="matrix-0-1"></div>
@@ -30,7 +31,7 @@
                 <div class="matrix-element" id="matrix-3-2"></div>
                 <div class="matrix-element" id="matrix-3-3"></div>
             </div>
-            <div class="list" id="list-container">
+            <div id="list-container">
                 <div class="list-element" id="list-0"></div>
                 <div class="list-element" id="list-1"></div>
                 <div class="list-element" id="list-2"></div>
@@ -38,12 +39,25 @@
                 <div class="list-element" id="list-4"></div>
                 <div class="list-element" id="list-5"></div>
             </div>
-            <img src="img/img87.png" alt="1" id="img-1">
+            <img src="img/img.webp" alt="1" id="img-1">
         </div>
         <div class="button-container" id="button-container">
             <div id="color-indication"></div>
             <button id="reset-button">重置颜色</button>
             <button id="generate-button">生成图片</button>
+        </div>
+        <h2 id="prompt-text">*请点击右侧颜色选中一个颜色后，点击人物图标</h2>
+    </div>
+    <div id="information-container">
+        <div class="information-item">
+            <h3 class="information" id="information-1">*表格作者：Twilight Moonlight</h3>
+            <a class="link" href="https://v.douyin.com/SMyKaUV4nS4/">抖音主页：v.douyin.com/SMyKaUV4nS4</a>
+            <h3 class="information" id="information-3">*该表格的一切权益归属于两位作者</h3>
+        </div>
+        <div class="information-item">
+            <h3 class="information" id="information-2">*角色形象作者：王维诗里的MBTI</h3>
+            <a class="link" href="https://v.douyin.com/T0dtUYQGQag/">抖音主页：v.douyin.com/T0dtUYQGQag</a>
+            <h3 class="information" id="information-4">*本网页不会以任何形式（包括捐赠、广告等形式）盈利</h3>
         </div>
     </div>
     <script src="main.js"></script>

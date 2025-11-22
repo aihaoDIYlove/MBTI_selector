@@ -1,73 +1,76 @@
-/* 标题 */
 #title {
     font-size: 30px;
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
-    text-align: center; /* 居中对齐 */
+    text-align: center;
 }
-/* 主容器卡片 */
+
+#prompt-text {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 #main-card {
     width: 86%;
     height: auto;
     min-height: 500px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 0 auto; /* 居中对齐 */
+    margin: 0 auto;
 }
-/* 图片容器 */
+
 #img-container {
-    position: relative; /* 为矩阵容器提供定位上下文 */
-    width: 100%; /* 宽度自动和main-card保持一致 */
+    position: relative;
+    width: 100%;
     height: 100%;
-    margin: 0 auto; /* 居中对齐 */
+    margin: 0 auto;
 }
-/* 图片 */
+
 #img-1 {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 保持图片比例，填充容器 */;
-    position: relative; /* 使z-index生效 */
+    object-fit: cover;
+    position: relative;
     z-index: 2;
+    pointer-events: none;
 }
 
-/* 矩阵容器 */
 #matrix-container {
-    position: absolute; /* 相对于img-container绝对定位 */
+    position: absolute;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);   /* 4 列等宽 */
-    grid-template-rows: repeat(4, 1fr);      /* 4 行等高 */
-    gap: 1px;                                /* 元素间距 */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px;
     top: 6%;
     left: 1.6%;
-    width: 72.5%; /* 宽度自动和main-card保持一致 */
+    width: 72.5%;
     height: 91%;
-    /* background-color: rgba(255, 255, 0, 0.5); */
     z-index: 1;
 }
 
-/* 矩阵元素 */
 .matrix-element {
     width: 100%;
     height: 100%;
-    background-color: rgba(135, 12, 12, 0.25);
+    background-color: rgba(135, 12, 12, 0.05);
 }
 
 #list-container {
-    position: absolute; /* 相对于img-container绝对定位 */
+    position: absolute;
     top: 6%;
     left: 76%;
     width: 24%;
     height: 51%;
-    /* background-color: rgba(255, 255, 0, 0.5); */
     display: flex;
     flex-direction: column;
     z-index: 1;
 }
 
-/* 列表元素 */
 .list-element {
     width: 100%;
     height: 100%;
@@ -77,7 +80,7 @@
 }
 
 #list-0 {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 62, 62);
 }
 
 #list-1 {
@@ -99,3 +102,57 @@
 #list-5 {
     background-color: rgb(183, 0, 255);
 }
+
+#button-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 80px;
+    width: 100%;
+}
+
+#color-indication {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #5a684a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-right: 36px;
+}
+
+#reset-button, #generate-button {
+    margin-right: 36px;
+    height: 40px;
+    width: 80px;
+    background-color: rgba(254, 65, 141, 0.91);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+.information {
+    color: white;
+    font-size: 6px;
+}
+
+.link {
+    color: white;
+    font-size: 6px;
+}
+
+#information-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.information-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(182, 89, 132, 0.505);
+    width: 50%;
+    min-width: 100px;
+}
+
