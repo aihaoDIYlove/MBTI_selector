@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
+    <meta name="color-scheme" content="dark">
     <title>MBTI喜好生成器</title>
 </head>
 <link rel="stylesheet" href="main.css">
@@ -11,10 +11,7 @@
     <h1 class="text" id="title">mbti喜好生成器</h1>
 
     <div class="card" id="main-card">
-
         <div class="image-container" id="img-container">
-            <img src="img/img87.png" alt="1" id="img-1">
-        
             <div class="matrix" id="matrix-container">
                 <div class="matrix-element" id="matrix-0-0"></div>
                 <div class="matrix-element" id="matrix-0-1"></div>
@@ -33,19 +30,21 @@
                 <div class="matrix-element" id="matrix-3-2"></div>
                 <div class="matrix-element" id="matrix-3-3"></div>
             </div>
-
             <div class="list" id="list-container">
-
                 <div class="list-element" id="list-0"></div>
                 <div class="list-element" id="list-1"></div>
                 <div class="list-element" id="list-2"></div>
                 <div class="list-element" id="list-3"></div>
                 <div class="list-element" id="list-4"></div>
                 <div class="list-element" id="list-5"></div>
-
+            </div>
+            <img src="img/img87.png" alt="1" id="img-1">
         </div>
+        <div class="button-container" id="button-container">
+            <div id="color-indication"></div>
+            <button id="reset-button">重置颜色</button>
+            <button id="generate-button">生成图片</button>
         </div>
-
     </div>
     <script src="main.js"></script>
 </body>
