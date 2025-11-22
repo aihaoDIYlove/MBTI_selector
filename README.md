@@ -1,6 +1,6 @@
 # MBTI喜好生成器
 
-一个简易MBTI人格类型的喜好选择器，可以通过点击颜色和人物图标来生成个性化的MBTI喜好矩阵图。
+一个简易MBTI人格类型的喜好填写器，可以通过点击颜色和人物图标来生成个性化的MBTI喜好矩阵图。
 
 ## 技术栈
 
@@ -18,6 +18,7 @@ MBTI_selector/
 │   ├── main.js             # 交互逻辑
 │   └── img/
 │       └── img.webp        # 表格图片
+│       └── favicon.ico     # 网站图标
 ├── server.js               # 开发服务器
 ├── package.json            # 项目配置
 └── README.md               # 项目说明
@@ -58,3 +59,4 @@ node server.js
 
 - 表格作者抖音主页：v.douyin.com/SMyKaUV4nS4
 - 角色形象作者抖音主页：v.douyin.com/T0dtUYQGQag
+- 项目部署：mbti.dreamripples.icu
