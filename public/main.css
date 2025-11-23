@@ -29,7 +29,7 @@ body {
     width: 86%;
     height: auto;
     min-height: 500px;
-    background: linear-gradient(135deg, #ffffff 0%, #fffffa 100%);
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -168,7 +168,8 @@ body {
 
 .information {
     color: white;
-    font-size: 6px;
+    font-size: 5px;
+    white-space: nowrap;
 }
 
 .link {

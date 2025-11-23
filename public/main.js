@@ -2,24 +2,48 @@ let currentColor = 'white';
 let generateButton;
 
 document.addEventListener('DOMContentLoaded', function() {
-    const colorIndicator = document.getElementById('color-indication');
-    colorIndicator.style.backgroundColor = currentColor;
+    // 尝试修复国产浏览器粗暴的深色模式导致的问题
+    const mainCard = document.getElementById('main-card');
+    if (mainCard) {
+        mainCard.style.cssText = 'background-color: white !important;';
+    }
     
     const listElements = document.querySelectorAll('.list-element');
-    listElements.forEach(element => {
+    const listColors = [
+        'rgb(255, 62, 62)',
+        'rgb(255, 145, 0)',
+        'rgb(255, 255, 0)',
+        'rgb(77, 255, 0)',
+        'rgb(0, 153, 255)',
+        'rgb(183, 0, 255)'
+    ];
+    
+    listElements.forEach((element, index) => {
+        if (listColors[index]) {
+            element.style.cssText = 'background-color: ' + listColors[index] + ' !important;';
+        }
         element.addEventListener('click', handleListElementClick);
     });
+    
+    const resetButton = document.getElementById('reset-button');
+    const generateButton = document.getElementById('generate-button');
+    if (resetButton) {
+        resetButton.style.cssText = 'background-color: rgba(254, 65, 141, 0.91) !important; color: rgb(255, 255, 255) !important;';
+        resetButton.addEventListener('click', handleResetClick);
+    }
+    if (generateButton) {
+        generateButton.style.cssText = 'background-color: rgba(254, 65, 141, 0.91) !important; color: rgb(255, 255, 255) !important;';
+        generateButton.addEventListener('click', handleGenerateClick);
+    }
+    
+    const colorIndicator = document.getElementById('color-indication');
+    // 使用内联样式保护，防止x5内核深色模式强制更改颜色
+    colorIndicator.style.cssText = 'background-color: ' + currentColor + ' !important; border: 2px solid #5a684a !important; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;';
     
     const matrixElements = document.querySelectorAll('.matrix-element');
     matrixElements.forEach(element => {
         element.addEventListener('click', handleMatrixElementClick);
     });
-    
-    const resetButton = document.getElementById('reset-button');
-    resetButton.addEventListener('click', handleResetClick);
-    
-    generateButton = document.getElementById('generate-button');
-    generateButton.addEventListener('click', handleGenerateClick);
 });
 
 function handleListElementClick(event) {
@@ -31,7 +55,7 @@ function handleListElementClick(event) {
     currentColor = backgroundColor;
     
     const colorIndicator = document.getElementById('color-indication');
-    colorIndicator.style.backgroundColor = currentColor;
+    colorIndicator.style.cssText = 'background-color: ' + currentColor + ' !important;';
     
     const listElements = document.querySelectorAll('.list-element');
     listElements.forEach(element => {
@@ -48,19 +72,19 @@ function handleMatrixElementClick(event) {
     
     const clickedElement = event.currentTarget;
     
-    clickedElement.style.backgroundColor = currentColor;
+    clickedElement.style.cssText = 'background-color: ' + currentColor + ' !important;';
 }
 
 function handleResetClick() {
     const matrixElements = document.querySelectorAll('.matrix-element');
     matrixElements.forEach(element => {
-        element.style.backgroundColor = 'rgba(135, 12, 12, 0.05)';
+        element.style.cssText = 'background-color: rgba(135, 12, 12, 0.05) !important;';
     });
     
     currentColor = 'white';
     
     const colorIndicator = document.getElementById('color-indication');
-    colorIndicator.style.backgroundColor = currentColor;
+    colorIndicator.style.cssText = 'background-color: ' + currentColor + ' !important; border: 2px solid #5a684a !important; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;';
     
     const listElements = document.querySelectorAll('.list-element');
     listElements.forEach(element => {
