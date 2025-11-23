@@ -2,31 +2,31 @@ let currentColor = 'white';
 let generateButton;
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 尝试修复国产浏览器粗暴的深色模式导致的问题
     const mainCard = document.getElementById('main-card');
     if (mainCard) {
-        mainCard.style.cssText = 'background-color: white !important;';
+        mainCard.style.cssText = 'background-color: #ffffff !important;';
     }
     
     const listElements = document.querySelectorAll('.list-element');
     const listColors = [
-        'rgb(255, 62, 62)',
-        'rgb(255, 145, 0)',
-        'rgb(255, 255, 0)',
-        'rgb(77, 255, 0)',
-        'rgb(0, 153, 255)',
-        'rgb(183, 0, 255)'
+        '#ff3e3e',
+        '#ff9100',
+        '#ffff00',
+        '#4dff00',
+        '#0099ff',
+        '#b700ff'
     ];
     
     listElements.forEach((element, index) => {
         if (listColors[index]) {
-            element.style.cssText = 'background-color: ' + listColors[index] + ' !important;';
+            // 为x5内核添加额外的保护措施
+            element.style.cssText = 'background-color: ' + listColors[index] + ' !important; forced-color-adjust: none !important; -webkit-forced-color-adjust: none !important;';
         }
         element.addEventListener('click', handleListElementClick);
     });
     
     const resetButton = document.getElementById('reset-button');
-    const generateButton = document.getElementById('generate-button');
+    generateButton = document.getElementById('generate-button');
     if (resetButton) {
         resetButton.style.cssText = 'background-color: rgba(254, 65, 141, 0.91) !important; color: rgb(255, 255, 255) !important;';
         resetButton.addEventListener('click', handleResetClick);
