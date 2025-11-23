@@ -57,6 +57,7 @@ node server.js
 
 ## 相关链接
 
-- 表格作者抖音主页：v.douyin.com/SMyKaUV4nS4
-- 角色形象作者抖音主页：v.douyin.com/T0dtUYQGQag
-- 项目部署：mbti.dreamripples.icu
+- 表格作者抖音主页：[v.douyin.com/SMyKaUV4nS4](https://v.douyin.com/SMyKaUV4nS4)
+- 角色形象作者抖音主页：[v.douyin.com/T0dtUYQGQag](https://v.douyin.com/T0dtUYQGQag)
+- 项目部署：[mbti.dreamripples.icu](https://mbti.dreamripples.icu)
+
