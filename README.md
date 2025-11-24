@@ -19,6 +19,7 @@ MBTI_selector/
 │   └── img/
 │       └── img.webp        # 表格图片
 │       └── favicon.ico     # 网站图标
+│   └── libs/               # 第三方库
 ├── server.js               # 开发服务器
 ├── package.json            # 项目配置
 └── README.md               # 项目说明
