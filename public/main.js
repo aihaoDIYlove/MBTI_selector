@@ -325,7 +325,7 @@ function cloneContainerContent(tempContainer) {
 
 /**
  * 执行截图操作
- * 使用 html2canvas 库生成高质量图片
+ * 使用 html2canvas 库生成图片
  * @function performScreenshot
  * @param {HTMLElement} tempContainer - 临时容器
  * @returns {Promise} 截图完成的 Promise 对象
