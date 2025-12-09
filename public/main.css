@@ -156,9 +156,22 @@ body {
     margin-right: 10%;
     height: 40px;
     width: 80px;
-    background-color: rgba(254, 65, 141, 0.91);
+    background-color: rgb(254, 65, 141);
     color: rgb(255, 255, 255);
-    border-radius: 13px;
+    border-radius: 14px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+    font-size: 13px;
+}
+
+#reset-button:active, #generate-button:active {
+    border: 2px solid rgba(192, 112, 112, 0.8);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+    font-size: 12px;
 }
 
 .information {
@@ -183,8 +196,28 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: rgba(182, 89, 132, 0.505);
+    background-color: rgba(182, 89, 132, 0.5);
     width: 50%;
     min-width: 100px;
 }
 
+/* #floating {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    z-index: 4;
+    
+}
+
+#floating svg {
+    width: 24px;
+    color: rgb(255, 255, 255);
+} */
