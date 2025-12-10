@@ -16,10 +16,12 @@ MBTI_selector/
 │   ├── index.html          # 主页面
 │   ├── main.css            # 样式文件
 │   ├── main.js             # 交互逻辑
-│   └── img/
+│   └── img/                # 图片资源
 │       └── img.webp        # 表格图片
 │       └── favicon.ico     # 网站图标
 │   └── libs/               # 第三方库
+│   └── js/                 # js文件
+│   └── css/                # css文件
 ├── server.js               # 开发服务器
 ├── package.json            # 项目配置
 └── README.md               # 项目说明
