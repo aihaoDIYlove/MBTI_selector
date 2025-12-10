@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>图片编辑...</title>
+    <meta name="color-scheme" content="dark">
+    <link rel="stylesheet" href="css/img.css">
+    <title>图片编辑器</title>
 </head>
 <body>
-    <div>
-        
+    <h1 id="title-text">图片编辑器 (∠・ω &lt; )⌒☆</h1>
+    <div id="text-box">
+        <!-- 这里根据实际状态改变，比如“涂鸦模式”、“文字模式”、“橡皮模式”等等
+         检测到两根手指触摸时自动切换至拖动模式，可根据手势放大缩小 -->
+        <h2 id="status">拖动模式</h2>
     </div>
+    <div id="img-box">
+        <!-- 这里是画布容器的位置，图片在这里编辑 -->
+    </div>
+    <div>
+        <div id="function-button-box">
+            <button id="graffiti-button" title="涂鸦">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                </svg>
+            </button>
+            <button id="rubber-button" title="橡皮擦">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 299.289 299.289">
+                    <path d="M290.422,79.244L220.034,8.857c-11.794-11.795-30.986-11.795-42.78,0C175.866,10.245,12.971,173.14,8.867,177.244 c-11.822,11.821-11.824,30.957,0,42.78l70.388,70.388c11.821,11.822,30.957,11.824,42.78,0 c1.046-1.046,165.357-165.357,168.388-168.388C302.244,110.203,302.246,91.066,290.422,79.244z M110.367,278.744 c-5.374,5.373-14.071,5.373-19.446,0l-70.388-70.388c-5.373-5.374-5.375-14.071,0-19.446l34.61-34.61l89.834,89.834 L110.367,278.744z M278.755,110.357l-122.111,122.11l-89.833-89.833l122.11-122.111c5.374-5.374,14.071-5.374,19.446,0 l70.388,70.388C284.129,96.285,284.129,104.983,278.755,110.357z"/>
+                </svg>
+            </button>
+            <button id="text-button" title="文字">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M5 4v3h5.5v12h3V7H19V4z"></path>
+                </svg>
+            </button>
+            <button id="revoke-button" title="撤销">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 5V2L6 8l6 6v-3c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="generate-button-box">
+        <button id="reset-button">重置画布</button>
+        <button id="generate-button">下载图片</button>
+    </div>
+
+<script src="js/img.js"></script>
 </body>
 </html>
