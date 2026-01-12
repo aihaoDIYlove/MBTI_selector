@@ -54,10 +54,10 @@ node server.js
 - 本项目不会以任何形式（包括捐赠、广告等形式）盈利
 - 表格的一切权益归属于两位作者
 - 角色形象版权归原作者所有
-- 如使用该项目，请向原作者索取授权！
+- 仅代码部分可随意使用，如需使用图片资源，请向原作者索取授权！
 
 ## 相关链接
 
 - 表格作者抖音主页：[v.douyin.com/SMyKaUV4nS4](https://v.douyin.com/SMyKaUV4nS4)
 - 角色形象作者抖音主页：[v.douyin.com/T0dtUYQGQag](https://v.douyin.com/T0dtUYQGQag)
-- 项目部署：[mbti.dreamripples.icu](https://mbti.dreamripples.icu) **根据Twilight Moonlight老师的要求，已经关停**
+- 项目部署：[mbti.dreamripples.icu](https://mbti.dreamripples.icu) **（根据Twilight Moonlight老师的要求，现已关停）**
