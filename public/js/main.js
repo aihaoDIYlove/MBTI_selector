@@ -3,7 +3,7 @@
  * 提供颜色选择、矩阵填充和图片生成功能
  * 
  * @file main.js
- * @version 1.0.0
+ * @version 1.2.0
  * @description MBTI 矩阵颜色选择器应用
  */
 
@@ -39,8 +39,8 @@ const STYLES = {
  * @constant {string[]} LIST_COLORS
  */
 const LIST_COLORS = [
-    '#ff3e3e', '#ff9100', '#ffff00',
-    '#4dff00', '#0099ff', '#b700ff'
+    '#fc9284', '#fbc28d', '#fefbae',
+    '#defaec', '#adcff5', '#f5b6e3'
 ];
 
 /**

@@ -14,11 +14,8 @@
 MBTI_selector/
 ├── public/
 │   ├── index.html          # 主页面
-│   ├── main.css            # 样式文件
-│   ├── main.js             # 交互逻辑
+│   ├── img.html            # 图片编辑页面
 │   └── img/                # 图片资源
-│       └── img.webp        # 表格图片
-│       └── favicon.ico     # 网站图标
 │   └── libs/               # 第三方库
 │   └── js/                 # js文件
 │   └── css/                # css文件

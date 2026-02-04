@@ -78,8 +78,8 @@ body {
     grid-template-rows: repeat(4, 1fr);
     gap: 1px;
     top: 6%;
-    left: 1.6%;
-    width: 72.5%;
+    left: 2.3%;
+    width: 80%;
     height: 91%;
     z-index: 1;
 }
@@ -92,10 +92,10 @@ body {
 
 #list-container {
     position: absolute;
-    top: 6%;
-    left: 76%;
-    width: 24%;
-    height: 51%;
+    top: 6.5%;
+    left: 83%;
+    width: 16%;
+    height: 31%;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -109,7 +109,7 @@ body {
     box-sizing: border-box;
 }
 
-#list-0 {
+/* #list-0 {
     background-color: #ff3e3e;
 }
 
@@ -131,7 +131,7 @@ body {
 
 #list-5 {
     background-color: #b700ff;
-}
+} */
 
 #button-container {
     display: flex;
@@ -197,6 +197,6 @@ body {
     align-items: center;
     padding: 10px;
     background-color: rgba(182, 89, 132, 0.5);
-    width: 50%;
+    width: 100%;
     min-width: 100px;
 }
