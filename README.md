@@ -42,22 +42,21 @@ npm install
 node server.js
 ```
 
-服务启动后，在浏览器中访问 `http://localhost:3000` 即可使用。
+服务启动后，在浏览器中访问 `http://localhost:3000`。
 
 ## 贡献者
 
-- **表格作者**：Twilight Moonlight
-- **角色形象作者**：王维诗里的MBTI
+- **表格作者**：小林鸭西
 
 ## 版权声明
 
 - 本项目不会以任何形式（包括捐赠、广告等形式）盈利
-- 表格的一切权益归属于两位作者
+- 表格的一切权益归属于原作者
 - 角色形象版权归原作者所有
 - 仅代码部分可随意使用，如需使用图片资源，请向原作者索取授权！
 
 ## 相关链接
 
-- 表格作者抖音主页：[v.douyin.com/SMyKaUV4nS4](https://v.douyin.com/SMyKaUV4nS4)
-- 角色形象作者抖音主页：[v.douyin.com/T0dtUYQGQag](https://v.douyin.com/T0dtUYQGQag)
-- 项目部署：[mbti.dreamripples.icu](https://mbti.dreamripples.icu) **（根据Twilight Moonlight老师的要求，现已关停）**
+- 表格作者抖音主页：[v.douyin.com/ZIBkZ2DSqCI](https://v.douyin.com/ZIBkZ2DSqCI)
+
+- 项目部署：[mbti.dreamripples.icu](https://mbti.dreamripples.icu)
